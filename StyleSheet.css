@@ -1,9 +1,9 @@
 ﻿
 /*
     colors:
-
-    light-blue:#529ce4
-    dark-blue:#0b3453
+    pale-blue: #cfe7fb
+    light-blue: #529ce4
+    dark-blue: #0b3453
 */
 h1 {
     text-align:left;
@@ -103,10 +103,10 @@ p {
 .gridview .pgr a:hover {text-decoration:underline;}
 
 
-.detailsview {width:100%; background:#F08080; border:solid 2px white; margin-left:auto; margin-right:auto;}
+.detailsview {width:100%; background:#cfe7fb; border:solid 2px white; margin-left:auto; margin-right:auto;}
 .detailsview td {background:white;}
-.detailsview .header td {background: #FFFF99; height:30px; font-size:larger; font-weight:bold;}
-.detailsview .fieldheader {background:#696969; color:white; font-weight:bold;}
+.detailsview .header td {background: #529ce4; height:30px; font-size:larger; font-weight:bold;}
+.detailsview .fieldheader {background:#0b3453; color:white; font-weight:bold;}
 .detailsview .command td {background: #FFFF99; padding:10px;}
 
 

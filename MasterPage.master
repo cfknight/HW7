@@ -42,10 +42,10 @@
 
         <div class="footer">
             <br />
+            <asp:Label ID="dateLabel" runat="server"></asp:Label>
+            <br />
+            <br />
             &copy; 2014 Chuck Knight 
-            <br />
-            6K:183 HW7
-            <br />
             <br />
         </div>
     </div>
