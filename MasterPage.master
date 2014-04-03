@@ -17,6 +17,7 @@
         <asp:Image cssclass="logo" ID="Image1" runat="server" ImageUrl="~/images/logo.gif" />
         <h1>319 Foodies</h1>
         <h3>Your source for Iowa City area eateries!</h3>
+            
         <br />
         </div>
 
@@ -35,6 +36,7 @@
         <hr />
         
         <div class="main">
+        <asp:LoginStatus ID="LoginStatus1" runat="server" CssClass="login" />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

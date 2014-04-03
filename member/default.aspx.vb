@@ -1,5 +1,5 @@
 ﻿
-Partial Class member_default
+Partial Class _default
     Inherits System.Web.UI.Page
 
 End Class

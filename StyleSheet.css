@@ -50,17 +50,25 @@ width:90%;
 .contact {
     width:80%; 
     border:solid 2px white; 
-    background:#FFFF99; 
+    background:#cfe7fb; 
     margin-left:auto; 
     margin-right:auto;
 }
 
 .about {
-    background:#FFFF99; 
+    background:#0b3453; 
     margin-left:auto; 
     margin-right:auto; 
     width:60%; 
     border: solid 2px white;
+}
+
+.about h1 {
+    color:white;
+    }
+
+.login {
+float:right;
 }
 
 /****************************
@@ -79,8 +87,9 @@ width:90%;
     margin-top:20px;
     margin-bottom:20px;
 }
+
 p {
-    background: #333333;
+    background: white;
     width: 80%;
     margin-left:auto;
     margin-right:auto;
@@ -107,6 +116,6 @@ p {
 .detailsview td {background:white;}
 .detailsview .header td {background: #529ce4; height:30px; font-size:larger; font-weight:bold;}
 .detailsview .fieldheader {background:#0b3453; color:white; font-weight:bold;}
-.detailsview .command td {background: #FFFF99; padding:10px;}
+.detailsview .command td {background: white; padding:10px;}
 
 

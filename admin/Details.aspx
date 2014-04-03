@@ -45,13 +45,14 @@
             <asp:BoundField DataField="phoneNumber" HeaderText="Phone Number" SortExpression="phoneNumber" />
             <asp:BoundField DataField="style" HeaderText="Style" SortExpression="style" />
             <asp:BoundField DataField="swankiness" HeaderText="Swankiness" SortExpression="swankiness" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
         </Fields>
 
 <HeaderStyle CssClass="header"></HeaderStyle>
         
     </asp:DetailsView>
 
-    <a href="./default.aspx">Back</a>
+    <a href="../admin/default.aspx">Back</a>
 
 </asp:Content>
 

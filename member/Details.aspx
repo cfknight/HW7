@@ -4,30 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:restaurantCS %>" DeleteCommand="DELETE FROM [Restaurants] WHERE [eateryID] = @eateryID" InsertCommand="INSERT INTO [Restaurants] ([eateryName], [address], [city], [phoneNumber], [style], [swankiness]) VALUES (@eateryName, @address, @city, @phoneNumber, @style, @swankiness)" SelectCommand="SELECT * FROM [Restaurants] WHERE ([eateryID] = @eateryID)" UpdateCommand="UPDATE [Restaurants] SET [eateryName] = @eateryName, [address] = @address, [city] = @city, [phoneNumber] = @phoneNumber, [style] = @style, [swankiness] = @swankiness WHERE [eateryID] = @eateryID">
-        <DeleteParameters>
-            <asp:Parameter Name="eateryID" Type="Int32" />
-        </DeleteParameters>
-        <InsertParameters>
-            <asp:Parameter Name="eateryName" Type="String" />
-            <asp:Parameter Name="address" Type="String" />
-            <asp:Parameter Name="city" Type="String" />
-            <asp:Parameter Name="phoneNumber" Type="String" />
-            <asp:Parameter Name="style" Type="String" />
-            <asp:Parameter Name="swankiness" Type="String" />
-        </InsertParameters>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:restaurantCS %>" SelectCommand="SELECT * FROM [Restaurants] WHERE ([eateryID] = @eateryID)">
         <SelectParameters>
             <asp:QueryStringParameter Name="eateryID" QueryStringField="eateryID" Type="Int32" />
         </SelectParameters>
-        <UpdateParameters>
-            <asp:Parameter Name="eateryName" Type="String" />
-            <asp:Parameter Name="address" Type="String" />
-            <asp:Parameter Name="city" Type="String" />
-            <asp:Parameter Name="phoneNumber" Type="String" />
-            <asp:Parameter Name="style" Type="String" />
-            <asp:Parameter Name="swankiness" Type="String" />
-            <asp:Parameter Name="eateryID" Type="Int32" />
-        </UpdateParameters>
     </asp:SqlDataSource>
 
     <asp:DetailsView ID="DetailsView1" runat="server" CssClass="detailsview" HeaderText="Eatery Details"
@@ -45,13 +25,14 @@
             <asp:BoundField DataField="phoneNumber" HeaderText="Phone Number" SortExpression="phoneNumber" />
             <asp:BoundField DataField="style" HeaderText="Style" SortExpression="style" />
             <asp:BoundField DataField="swankiness" HeaderText="Swankiness" SortExpression="swankiness" />
+            <asp:CommandField ShowInsertButton="True" />
         </Fields>
 
 <HeaderStyle CssClass="header"></HeaderStyle>
         
     </asp:DetailsView>
 
-    <a href="./default.aspx">Back</a>
+    <a href="./member/default.aspx">Back</a>
 
 </asp:Content>
 

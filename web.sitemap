@@ -5,18 +5,21 @@
         <siteMapNode url="~/default.aspx" title="Home"  description="" />
 
         <siteMapNode url="~/Admin/default.aspx" title="Admin"  description="">
-            <siteMapNode url="~/Admin/eateries.aspx" title="Eateries" />
+            <siteMapNode url="~/Admin/details.aspx" title="Details" />
+            <siteMapNode url="~/Admin/newRestaurant.aspx" title="New" />
         </siteMapNode>
 
         <siteMapNode url="~/Member/default.aspx" title="Member"  description="">
-            <siteMapNode url="~/Member/eateries.aspx" title="Eateries" />
+            <siteMapNode url="~/Member/details.aspx" title="Details" />
+            <siteMapNode url="~/Member/newRestaurant.aspx" title="New" />
+
         </siteMapNode>
 
       <siteMapNode url="~/Search.aspx" title="Search"  description="" />
 
       <siteMapNode url="~/AboutUs.aspx" title="AboutUs"  description="" />
 
-        <siteMapNode url="~/ContactUs.aspx" title="ContactUs"  description="" />
+      <siteMapNode url="~/ContactUs.aspx" title="ContactUs"  description="" />
 
     </siteMapNode>
 </siteMap>

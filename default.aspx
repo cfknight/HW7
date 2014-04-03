@@ -28,13 +28,9 @@
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" 
         DataSourceID="SqlDataSource1" CssClass="gridview" PagerStyle-CssClass="pgr" AutoGenerateColumns="False" DataKeyNames="eateryID">
         <Columns>
-            <asp:BoundField DataField="eateryID" HeaderText="eateryID" InsertVisible="False" ReadOnly="True" SortExpression="eateryID" />
-            <asp:BoundField DataField="eateryName" HeaderText="eateryName" SortExpression="eateryName" />
-            <asp:BoundField DataField="address" HeaderText="address" SortExpression="address" />
-            <asp:BoundField DataField="city" HeaderText="city" SortExpression="city" />
-            <asp:BoundField DataField="phoneNumber" HeaderText="phoneNumber" SortExpression="phoneNumber" />
-            <asp:BoundField DataField="style" HeaderText="style" SortExpression="style" />
-            <asp:BoundField DataField="swankiness" HeaderText="swankiness" SortExpression="swankiness" />
+            <asp:BoundField DataField="eateryName" HeaderText="Eatery Name" SortExpression="eateryName" />
+            <asp:BoundField DataField="style" HeaderText="Style" SortExpression="style" />
+            <asp:HyperLinkField DataNavigateUrlFields="eateryID" DataNavigateUrlFormatString="Details.aspx?eateryID={0}" Text="Details" />
         </Columns>
 <PagerStyle CssClass="pgr"></PagerStyle>
     </asp:GridView>

@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="Details.aspx.vb" Inherits="Details" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="newRestaurant.aspx.vb" Inherits="admin_newRestaurant" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:restaurantCS %>" DeleteCommand="DELETE FROM [Restaurants] WHERE [eateryID] = @eateryID" InsertCommand="INSERT INTO [Restaurants] ([eateryName], [address], [city], [phoneNumber], [style], [swankiness]) VALUES (@eateryName, @address, @city, @phoneNumber, @style, @swankiness)" SelectCommand="SELECT * FROM [Restaurants] WHERE ([eateryID] = @eateryID)" UpdateCommand="UPDATE [Restaurants] SET [eateryName] = @eateryName, [address] = @address, [city] = @city, [phoneNumber] = @phoneNumber, [style] = @style, [swankiness] = @swankiness WHERE [eateryID] = @eateryID">
         <DeleteParameters>
             <asp:Parameter Name="eateryID" Type="Int32" />
@@ -45,13 +44,14 @@
             <asp:BoundField DataField="phoneNumber" HeaderText="Phone Number" SortExpression="phoneNumber" />
             <asp:BoundField DataField="style" HeaderText="Style" SortExpression="style" />
             <asp:BoundField DataField="swankiness" HeaderText="Swankiness" SortExpression="swankiness" />
+            <asp:CommandField ShowInsertButton="True" />
         </Fields>
 
 <HeaderStyle CssClass="header"></HeaderStyle>
         
     </asp:DetailsView>
 
-    <a href="./default.aspx">Back</a>
+    <a href="~/default.aspx">Back</a>
 
 </asp:Content>
 
