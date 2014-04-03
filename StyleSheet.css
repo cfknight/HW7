@@ -1,0 +1,112 @@
+﻿
+/*
+    colors:
+
+    light-blue:#529ce4
+    dark-blue:#0b3453
+*/
+h1 {
+    text-align:left;
+}
+
+h3 {
+    text-align:left;
+}
+div {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    background:white;
+}
+
+.container {
+    width:100%;
+    padding:20px;
+    margin-right:auto;
+    }
+
+.logo {
+    height:100px;
+    float:right;
+    margin-right:10px;
+    padding-right:10px;
+    border:0;
+    z-index:-1;
+}
+
+.header {
+    z-index:0;
+    width:90%;
+}
+
+.main {
+    width:90%;
+}
+
+.footer {
+width:90%;
+}
+.contact {
+    width:80%; 
+    border:solid 2px white; 
+    background:#FFFF99; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.about {
+    background:#FFFF99; 
+    margin-left:auto; 
+    margin-right:auto; 
+    width:60%; 
+    border: solid 2px white;
+}
+
+/****************************
+    Menu Styles
+    ****************************/
+.menu {
+    width:90%
+}
+
+.level1 {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.level2 {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+p {
+    background: #333333;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    border:solid 2px white;
+}
+
+/****************************
+    Gridview Styles
+    ****************************/
+
+.gridview {width:70%; background:white; border:hidden; margin-left:auto; margin-right:auto;}
+.gridview th {background:#529ce4; color:white; height:50px;}
+.gridview td {height:30px;}
+.gridview a {text-decoration: none;}
+.gridview a:hover {text-decoration:underline;}
+.gridview .pgr {background:#529ce4; text-align:center;}
+.gridview .pgr table {margin: 5px 0; background:#0b3453;}
+.gridview .pgr td {padding: 0 10px; font-weight:bold;}
+.gridview .pgr a {color:white; text-decoration:none;}
+.gridview .pgr a:hover {text-decoration:underline;}
+
+
+.detailsview {width:100%; background:#F08080; border:solid 2px white; margin-left:auto; margin-right:auto;}
+.detailsview td {background:white;}
+.detailsview .header td {background: #FFFF99; height:30px; font-size:larger; font-weight:bold;}
+.detailsview .fieldheader {background:#696969; color:white; font-weight:bold;}
+.detailsview .command td {background: #FFFF99; padding:10px;}
+
+
