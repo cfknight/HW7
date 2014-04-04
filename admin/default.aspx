@@ -25,6 +25,8 @@
             <asp:Parameter Name="eateryID" Type="Int32" />
         </UpdateParameters>
 </asp:SqlDataSource>
+    <br />
+    <br />
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" 
         DataSourceID="SqlDataSource1" CssClass="gridview" PagerStyle-CssClass="pgr" AutoGenerateColumns="False" DataKeyNames="eateryID">
         <Columns>

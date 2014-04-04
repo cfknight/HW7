@@ -7,6 +7,10 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:restaurantCS %>" SelectCommand="SELECT * FROM [Restaurants]"></asp:SqlDataSource>
     
     
+    <br />
+    <br />
+    
+    
     <%If Not IsPostBack Then%>
     Search restaurants by name, type, or location:
 

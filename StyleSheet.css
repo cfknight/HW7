@@ -56,6 +56,7 @@ width:90%;
 }
 
 .about {
+    margin-top:30px;
     background:#0b3453; 
     margin-left:auto; 
     margin-right:auto; 
@@ -65,10 +66,17 @@ width:90%;
 
 .about h1 {
     color:white;
-    }
+    margin-left: 160px;
+}
 
 .login {
 float:right;
+}
+
+.highlight {
+font-weight:bold;
+font-style:italic;
+color: blue;
 }
 
 /****************************
@@ -86,6 +94,7 @@ float:right;
 .level2 {
     margin-top:20px;
     margin-bottom:20px;
+    padding-left:40px;
 }
 
 p {
@@ -112,7 +121,7 @@ p {
 .gridview .pgr a:hover {text-decoration:underline;}
 
 
-.detailsview {width:100%; background:#cfe7fb; border:solid 2px white; margin-left:auto; margin-right:auto;}
+.detailsview {width:60%; background:#cfe7fb; border:solid 2px white; margin-left:auto; margin-right:auto;}
 .detailsview td {background:white;}
 .detailsview .header td {background: #529ce4; height:30px; font-size:larger; font-weight:bold;}
 .detailsview .fieldheader {background:#0b3453; color:white; font-weight:bold;}

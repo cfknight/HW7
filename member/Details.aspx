@@ -10,9 +10,12 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
+    <br />
+    <br />
+
     <asp:DetailsView ID="DetailsView1" runat="server" CssClass="detailsview" HeaderText="Eatery Details"
     HeaderStyle-CssClass="header" FieldHeaderStyle-CssClass="fieldheader" itemstyle-cssclass="item" 
-        CommandRowStyle-CssClass="command" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1">
+        CommandRowStyle-CssClass="command" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1">
         
 <CommandRowStyle CssClass="command"></CommandRowStyle>
 
@@ -25,14 +28,16 @@
             <asp:BoundField DataField="phoneNumber" HeaderText="Phone Number" SortExpression="phoneNumber" />
             <asp:BoundField DataField="style" HeaderText="Style" SortExpression="style" />
             <asp:BoundField DataField="swankiness" HeaderText="Swankiness" SortExpression="swankiness" />
-            <asp:CommandField ShowInsertButton="True" />
         </Fields>
 
 <HeaderStyle CssClass="header"></HeaderStyle>
         
     </asp:DetailsView>
 
-    <a href="./member/default.aspx">Back</a>
+    <br />
+    <br />
+
+    <a href="./default.aspx">Back</a>
 
 </asp:Content>
 

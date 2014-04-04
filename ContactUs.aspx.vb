@@ -13,7 +13,7 @@ Partial Class ContactUs
 
         msg.To.Add("ui.6k183@gmail.com")  'destination email address
         msg.From = New MailAddress(senderAddress.Text)  'get the address from the textbox
-        msg.Subject = "Wicked Easy Recipes Feedback"  'set the message subject line
+        msg.Subject = "319 Foodies Feedback"  'set the message subject line
         msg.Body = senderMessage.Text  'get the message body from the textbox
 
         client.Host = "smtp.gmail.com"  'place your smtp server inside quotation marks - gmail is smtp.gmail.com

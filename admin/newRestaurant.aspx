@@ -29,9 +29,12 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
+    <br />
+    <br />
+
     <asp:DetailsView ID="DetailsView1" runat="server" CssClass="detailsview" HeaderText="Eatery Details"
     HeaderStyle-CssClass="header" FieldHeaderStyle-CssClass="fieldheader" itemstyle-cssclass="item" 
-        CommandRowStyle-CssClass="command" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1">
+        CommandRowStyle-CssClass="command" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
         
 <CommandRowStyle CssClass="command"></CommandRowStyle>
 
@@ -51,7 +54,5 @@
         
     </asp:DetailsView>
 
-    <a href="~/default.aspx">Back</a>
-
-</asp:Content>
+    </asp:Content>
 

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:restaurantCS %>" DeleteCommand="DELETE FROM [Restaurants] WHERE [eateryID] = @eateryID" InsertCommand="INSERT INTO [Restaurants] ([eateryName], [address], [city], [phoneNumber], [style], [swankiness]) VALUES (@eateryName, @address, @city, @phoneNumber, @style, @swankiness)" SelectCommand="SELECT * FROM [Restaurants] WHERE ([eateryID] = @eateryID)" UpdateCommand="UPDATE [Restaurants] SET [eateryName] = @eateryName, [address] = @address, [city] = @city, [phoneNumber] = @phoneNumber, [style] = @style, [swankiness] = @swankiness WHERE [eateryID] = @eateryID">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:restaurantCS %>" DeleteCommand="DELETE FROM [Restaurants] WHERE [eateryID] = @eateryID" InsertCommand="INSERT INTO [Restaurants] ([eateryName], [address], [city], [phoneNumber], [style], [swankiness]) VALUES (@eateryName, @address, @city, @phoneNumber, @style, @swankiness)" SelectCommand="SELECT * FROM [Restaurants]" UpdateCommand="UPDATE [Restaurants] SET [eateryName] = @eateryName, [address] = @address, [city] = @city, [phoneNumber] = @phoneNumber, [style] = @style, [swankiness] = @swankiness WHERE [eateryID] = @eateryID">
         <DeleteParameters>
             <asp:Parameter Name="eateryID" Type="Int32" />
         </DeleteParameters>
@@ -15,9 +15,6 @@
             <asp:Parameter Name="style" Type="String" />
             <asp:Parameter Name="swankiness" Type="String" />
         </InsertParameters>
-        <SelectParameters>
-            <asp:QueryStringParameter Name="eateryID" QueryStringField="eateryID" Type="Int32" />
-        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="eateryName" Type="String" />
             <asp:Parameter Name="address" Type="String" />
@@ -29,9 +26,12 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
+    <br />
+    <br />
+
     <asp:DetailsView ID="DetailsView1" runat="server" CssClass="detailsview" HeaderText="Eatery Details"
     HeaderStyle-CssClass="header" FieldHeaderStyle-CssClass="fieldheader" itemstyle-cssclass="item" 
-        CommandRowStyle-CssClass="command" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1">
+        CommandRowStyle-CssClass="command" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
         
 <CommandRowStyle CssClass="command"></CommandRowStyle>
 
@@ -51,7 +51,5 @@
         
     </asp:DetailsView>
 
-    <a href="~/default.aspx">Back</a>
-
-</asp:Content>
+    </asp:Content>
 

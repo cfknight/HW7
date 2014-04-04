@@ -30,9 +30,12 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
+    <br />
+    <br />
+
     <asp:DetailsView ID="DetailsView1" runat="server" CssClass="detailsview" HeaderText="Eatery Details"
     HeaderStyle-CssClass="header" FieldHeaderStyle-CssClass="fieldheader" itemstyle-cssclass="item" 
-        CommandRowStyle-CssClass="command" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1">
+        CommandRowStyle-CssClass="command" AutoGenerateRows="False" DataKeyNames="eateryID" DataSourceID="SqlDataSource1">
         
 <CommandRowStyle CssClass="command"></CommandRowStyle>
 
@@ -50,6 +53,8 @@
 <HeaderStyle CssClass="header"></HeaderStyle>
         
     </asp:DetailsView>
+
+    <br />
 
     <a href="./default.aspx">Back</a>
 
